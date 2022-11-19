@@ -180,6 +180,11 @@ header nav .form i {
 .container ul li {
    position: relative;
 }
+.container ul li a:hover {
+   color: red;
+   transform: scale(1.1);
+   transition: 0.6s;
+}
 .dropdown {
    display: none;
    
@@ -189,19 +194,21 @@ header nav .form i {
    display: block;
    position: absolute;
    left: 0;
-   top: 100%;
-   background-color: black;
+   top: 65%;
+   /* background-color: black; */
    
    
 }
 
 .dropdown ul {
    display: block;
-   margin: 10px;
+   /* margin: 10px; */
 }
 .dropdown ul li {
    width: 90px;
    padding: 10px;
+   height: 90px;
+   margin-top: -35px;
 }
 
 .container ul li ul li:hover .dropdown {
@@ -233,7 +240,7 @@ header nav .form i {
 }
 /* end video */
 /* Start services */
-.services {
+/* .services {
    padding-top: var(--section-padding);
    padding-bottom: var(--section-padding);
    background-color: white;
@@ -273,8 +280,76 @@ header nav .form i {
 }
 .services .container .main-heading {
    color: red;
-}
+} */
 /* End services */
+/* Start News */
+section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: white;
+}
+.content {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.news .content {
+   margin-top: 30px;
+}
+
+.card {
+   background-color: #fff;
+   min-height: 14em;
+   width: 25em;
+   overflow: hidden;
+   border-radius: 10px;
+   margin: 20px;
+   transition:0.7s;
+   box-shadow: 0 5px 25px black;
+   border-radius: 10px;
+   padding: 25px;
+   margin: 15px;
+}
+
+.card:hover {
+   transform: scale(1.1);
+}
+
+.card:hover .news-img {
+   opacity: 0.9;
+}
+
+.news-img {
+   width: 250px;
+   border-radius: 0%;
+}
+.news-info {
+   padding: 1em;
+}
+
+.news-p {
+   font-size: 0.8em;
+   color: #000;
+}
+
+.news-tittle {
+display: flex;
+justify-content: space-between;
+text-transform: uppercase;
+font-weight: 800;
+margin-top: 10px;
+}
+
+.more-details {
+color: #3a6cf4;
+}
+
+.more-details:hover {
+color: #601cfc;
+}
+/* End News */
 /* Start Contact  */
 .contact {
    padding-top: var(--section-padding);
