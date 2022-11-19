@@ -100,6 +100,7 @@ header .container {
    align-items: center;
    position: relative;
    min-height: 97px;
+   
 }
 header .logo img {
    height: 120px;
@@ -109,6 +110,7 @@ header nav {
    display: flex;
    align-items: center;
    justify-content: flex-end;
+   
 }
 header nav .toggle-menu {
    color: white;
@@ -143,7 +145,7 @@ header nav ul li a {
    display: block;
    color: white;
    text-decoration: none;
-   font-size: 14px;
+   font-size: 17px;
    transition: 0.3s;
    padding: 40px 10px;
    position: relative;
@@ -168,6 +170,42 @@ header nav .form i {
    top: 50%;
    transform: translateY(-50%);
    right: 0;
+}
+/* ul dropdown */
+.container ul {
+   list-style: none;
+   display: flex;
+}
+
+.container ul li {
+   position: relative;
+}
+.dropdown {
+   display: none;
+   
+}
+
+.container ul li:hover .dropdown {
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 100%;
+   background-color: black;
+   
+   
+}
+
+.dropdown ul {
+   display: block;
+   margin: 10px;
+}
+.dropdown ul li {
+   width: 90px;
+   padding: 10px;
+}
+
+.container ul li ul li:hover .dropdown {
+   display: block;
 }
 /* End header */
 /* start landig */
